@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #3D6870, #2F4858);
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    width: 100%;
+    height: 90px;
+    background-color: #f5deb3;
+    border-bottom: 7px solid #504e49;
+}
+.titulo h1 {
+    font-family: 'Grenze', serif;
+    color: #263f3f;
+    text-shadow: 2px 1px #8e939c;
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.cartoes {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+} 
+
+.cartao {
+    text-align: center;
+    background-color: #f5deb3;
+    width: 340px;
+    height: 70px;
+    margin: 0 30px;
+    border-bottom: 7px solid #413f3a;
+    border-radius: 20px;
+}
+.cartao:hover {
+    transform: translateY(3px);
+    border-bottom: 4px solid #413f3a;
+    cursor: pointer;
+}
