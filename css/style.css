@@ -1,11 +1,45 @@
+/* @media screen and (min-width: 900px) {
+
+} */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 html, body {
-    height: 100%;
     margin: 0;
 }
 
 body {
     background-image: linear-gradient(to right bottom, #3D6870, #2F4858);
     background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+}
+
+.informacao {
+    display: flex;
+    width: 95%;
+    border-radius: 5px;
+    align-self: center;
+    margin: 30px;
+    background-color: #56524a;
+    border: 2px #6d6d6d solid;
+    box-shadow: 0 1px 8px black;
+}
+.informacao img {
+    margin:10px;
+    width: 40%;
+}
+.informacao p {
+    font-family: 'Lato', sans-serif;
+    color: #dffffa;
+    font-size: 18px;
+    margin: 10px;
 }
 
 .titulo {
@@ -24,23 +58,15 @@ body {
     padding: 0;
 }
 
-.cartoes {
-    display: flex;
-    margin-top: 40px;
-    justify-content: center;
-} 
-
 .cartao {
     text-align: center;
     background-color: #f5deb3;
-    width: 340px;
-    height: 70px;
-    margin: 0 30px;
-    border-bottom: 7px solid #413f3a;
+    height: 40px;
+    border-bottom: 5px solid #413f3a;
     border-radius: 20px;
 }
 .cartao:hover {
     transform: translateY(3px);
-    border-bottom: 4px solid #413f3a;
+    border-bottom: 2px solid #413f3a;
     cursor: pointer;
 }
