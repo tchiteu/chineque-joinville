@@ -11,6 +11,10 @@ body {
     background-repeat: no-repeat;
 }
 
+italic {
+    font-style: italic;
+}
+
 .flex {
     display: flex;
 }
@@ -18,6 +22,10 @@ body {
 .container {
     flex-direction: column;
     display: flex;
+}
+
+.link {
+    color: #bbaf96;
 }
 
 .informacao {
@@ -35,15 +43,16 @@ body {
 .informacao img {
     margin:10px;
     width: 40%;
+    border: 2px solid #0a1819;
 }
 .informacao p {
     margin: 10px;
     font-size: 26px;
 }
-.informacao a {
+.informacao .botao {
+    text-decoration: none; 
     color: #dffffa;
     border-radius: 10px;
-    text-decoration: none;
     align-self: center;
     height: 30px;
     padding: 10px;
@@ -71,19 +80,25 @@ body {
 
 .contato {
     font-family: 'Grenze', serif;
-    display: flex;
+    align-self: center;
     width: 65%;
     border-radius: 5px;
-    align-self: center;
     margin: 30px;
     background-color: #56524a;
     border: 2px #6d6d6d solid;
     box-shadow: 0 1px 8px black;
-    color: #dffffa;
     font-size: 20px;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
 } 
+.contato h2 { 
+    color: #dfffe9;
+    margin: 10px 0 0 0;
+}
+.contato p {
+    color: #bbaf96;
+}
 .contato h2:hover {
     cursor: pointer;    
 }
